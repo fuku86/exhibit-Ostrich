@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exhibit-Ostrich | オーストリッチ展示ページ</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, 'ヒラギノ角ゴ Pro', 'メイリオ';
+            line-height: 1.8;
+            color: #333;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            padding: 20px;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+
+        .hero-wrapper {
+            position: relative;
+            width: 100%;
+        }
+
+        .hero-image {
+            width: 100%;
+            height: auto;
+            max-height: 400px;
+            object-fit: cover;
+            display: block;
+            background: #f0f0f0;
+        }
+
+        .hero-title {
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+            text-align: right;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+            z-index: 10;
+        }
+
+        .hero-title h1 {
+            font-size: 2.5em;
+            margin: 0;
+            letter-spacing: 2px;
+            font-weight: 700;
+        }
+
+        .hero-title p {
+            font-size: 1.1em;
+            margin: 5px 0 0 0;
+            opacity: 0.95;
+        }
+
+        main {
+            padding: 40px 30px;
+        }
+
+        section {
+            margin-bottom: 50px;
+        }
+
+        section h2 {
+            color: #667eea;
+            font-size: 1.8em;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #667eea;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0 0 0 30px;
+        }
+
+        li {
+            margin-bottom: 15px;
+            padding-left: 20px;
+            position: relative;
+            line-height: 1.8;
+        }
+
+        li:before {
+            content: "";
+            position: absolute;
+            left: 0;
+            color: #667eea;
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+
+        .en-section {
+            background: #f8f9fa;
+            padding: 30px;
+            border-radius: 8px;
+            margin-top: 40px;
+            border-left: 4px solid #667eea;
+        }
+
+        .en-section h2 {
+            color: #764ba2;
+            border-bottom-color: #764ba2;
+        }
+
+        .footer-note {
+            background: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 20px;
+            margin-top: 40px;
+            border-radius: 8px;
+            font-size: 0.95em;
+        }
+
+        .footer-note p {
+            margin-bottom: 15px;
+        }
+
+        a {
+            color: #667eea;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: #764ba2;
+            text-decoration: underline;
+        }
+
+        footer {
+            background: #f8f9fa;
+            padding: 30px;
+            text-align: center;
+            color: #666;
+            font-size: 0.9em;
+        }
+
+        hr {
+            border: none;
+            height: 2px;
+            background: linear-gradient(to right, transparent, #667eea, transparent);
+            margin: 40px 0;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                max-width: 100%;
+                margin: 0;
+                border-radius: 0;
+                box-shadow: none;
+            }
+
+            .hero-title h1 {
+                font-size: 1.8em;
+            }
+
+            .hero-title {
+                bottom: 15px;
+                right: 15px;
+            }
+
+            main {
+                padding: 0;
+            }
+
+            section {
+                width: 100%;
+                box-sizing: border-box;
+                padding: 10px 5px;
+                margin-right: 0;
+                margin-top: 20px;
+                margin-left: 0;
+                background: transparent;
+                border-radius: 0;
+                border-left: none;
+            }
+
+            section h2 {
+                font-size: 1.3em;
+                display: block;
+                text-align: left;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="hero-wrapper">
+            <img src="images/Ostrich-hero.jpg" alt="オーストリッチ革" class="hero-image">
+            <div class="hero-title">
+                <h1>exhibit-Ostrich</h1>
+                <p>オーストリッチ革の解説ページ</p>
+            </div>
+        </div>
+
+        <main>
+            <!-- 日本語セクション -->
+            <section>
+                <h2> オーストリッチ革とは</h2>
+                <ul>
+                    <li>• オーストリッチ革は、ダチョウの革です。</li>
+                    <li>• 最大の特徴は、羽毛を抜いた跡にできる**丸い突起模様（クイルマーク）**で、独特の表情と高級感があります。</li>
+                    <li>• 見た目の個性だけでなく、比較的やわらかく、しなやかで、使い込むほどに味わいが増す革として知られています。</li>
+                    <li>• バッグ・財布・小物などで使われることが多く、部位によって模様の出方が異なります。</li>
+                </ul>
+            </section>
+
+            <hr>
+
+            <section>
+                <h2> 特徴</h2>
+                <ul>
+                    <li>• クイルマーク（羽根跡）による独特の表情</li>
+                    <li>• やわらかく、しなやかで手になじみやすい</li>
+                    <li>• 見た目に高級感・個性が出やすい</li>
+                    <li>• 比較的軽く、扱いやすい</li>
+                    <li>• 部位によって模様の密度や見え方が異なる（無地に近い部分もある）</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2> 用途</h2>
+                <ul>
+                    <li>• バッグ</li>
+                    <li>• 財布</li>
+                    <li>• 名刺入れ・カードケース</li>
+                    <li>• ベルト</li>
+                    <li>• 小物（ポーチ、キーケースなど）</li>
+                    <li>• 一部で靴やアクセントパーツにも使用</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2> お手入れ</h2>
+                <ul>
+                    <li>• 柔らかい布でほこりをやさしく拭き取ってください。</li>
+                    <li>• 水分や汚れは放置せず、早めに乾いた布で軽く拭き取るのがおすすめです。</li>
+                    <li>• 保管時は直射日光・高温多湿を避け、型崩れしないように保管してください。</li>
+                    <li>• 革用クリームを使う場合は、目立たない場所で試してから少量ずつ使用してください。</li>
+                    <li>• 模様部分（クイルマーク）に汚れが入り込まないよう、日常的な軽いケアが有効です。</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2> ワンポイント</h2>
+                <ul>
+                    <li>• オーストリッチ革は模様が印象的なので、全面使いで存在感を出すのはもちろん、差し込みで使っても高級感が出ます。</li>
+                    <li>• 同じオーストリッチでも部位によって表情がかなり変わるため、一点ごとの個体差を楽しめる革です。</li>
+                </ul>
+            </section>
+
+            <hr>
+
+            <!-- 英語セクション -->
+            <div class="en-section">
+                <section>
+                    <h2> Overview</h2>
+                    <ul>
+                        <li>• Ostrich leather is leather made from ostrich skin.</li>
+                        <li>• Its most distinctive feature is the pattern of raised dots called quill marks, which are the follicle marks left where feathers grew.</li>
+                        <li>• In addition to its unique appearance, ostrich leather is known for being relatively soft, supple, and comfortable to handle, and it develops character with use.</li>
+                        <li>• It is commonly used for bags, wallets, and small leather goods, and the pattern varies depending on the part of the skin.</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2> Features</h2>
+                    <ul>
+                        <li>• Distinctive quill mark pattern (feather follicle marks)</li>
+                        <li>• Soft and supple, comfortable in hand</li>
+                        <li>• Luxurious and highly recognizable appearance</li>
+                        <li>• Relatively lightweight and easy to handle</li>
+                        <li>• Pattern density varies by section (some parts are smoother with fewer marks)</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2> Uses</h2>
+                    <ul>
+                        <li>• Bags</li>
+                        <li>• Wallets</li>
+                        <li>• Business card holders / card cases</li>
+                        <li>• Belts</li>
+                        <li>• Small leather goods (pouches, key cases, etc.)</li>
+                        <li>• Sometimes used for shoes or accent panels</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2> Care</h2>
+                    <ul>
+                        <li>• Gently wipe off dust with a soft cloth.</li>
+                        <li>• If it gets wet or dirty, wipe it promptly with a dry cloth and avoid leaving moisture on the surface.</li>
+                        <li>• Store away from direct sunlight, heat, and humidity, and help maintain its shape during storage.</li>
+                        <li>• If using leather cream, test on an inconspicuous area first and apply sparingly.</li>
+                        <li>• Light routine care helps prevent dirt from building up around the quill marks.</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2> Tips</h2>
+                    <ul>
+                        <li>• Because ostrich leather has a distinctive pattern, it works well both as a full-surface material for strong visual impact and as an accent material for a refined touch.</li>
+                        <li>• Different sections of the leather have different appearances, making each item visually unique.</li>
+                    </ul>
+                </section>
+            </div>
+
+            <div class="footer-note">
+                <p><strong> 注記：</strong>このページは展示品の解説ページです。以下は会社の公式サイトへのリンクです。</p>
+                <p><strong>企業サイト：</strong><a href="https://www.midori-alg.com/" target="_blank" rel="noopener noreferrer">ミドリオートレザー株式会社</a></p>
+            </div>
+        </main>
+
+        <footer>
+            <p>&copy; 2025 exhibit-Ostrich. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
+
+
